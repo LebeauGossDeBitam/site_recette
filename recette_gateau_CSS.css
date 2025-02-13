@@ -15,7 +15,7 @@ body{
 }
 
 div.categorie{
-    margin-bottom: -18px;
+    margin-bottom: -60px;
     margin-top: 60px;
 }
 
@@ -31,9 +31,9 @@ p.categorie {
 
 div.contenu{
     background-color: white;
-    margin: 0px 10% 80px 10%;
-    padding: 30px;
-    min-width: 350px;
+    margin: 40px 8% 40px 8%;
+    padding: 0 8px 20px 8px;
+    /*min-width: 350px;*/
     box-shadow: 0px 0px 8px 8px rgb(0, 0, 0, 0.1);
 }
 
@@ -71,19 +71,19 @@ table.info{
     bottom: 0;
     color: white;
     background-color: #62829DC0;
-    height: 80px;
+    height: 50px;
 }
 
 table.info td{
     vertical-align: top;
     text-align: center;
-    font-size: 14px;
+    font-size: 12px;
 }
 
 table.info th{
     text-align: center;
     vertical-align: bottom;
-    font-size: 16px;
+    font-size: 14px;
     padding-bottom: 8px;
 }
 
@@ -97,7 +97,7 @@ img.info{
 
 
 div.colonne{
-    width: 45%;
+    width: 100%;
     margin-top: 20px;
     
 }
@@ -105,13 +105,8 @@ div.colonne{
 
 div.colonne1{
     display: inline-block;
-    margin-left: 10%;
 }
 
-
-div.colonne2{
-    float: left;
-}
 
 
 div.colonne h2{
@@ -159,4 +154,55 @@ div.colonne h2{
 
 .preparation tr{
     height: 40px;
+}
+
+
+/* style pour ordinateur */ 
+
+@media only screen and (min-width: 768px){
+    div.contenu{
+        margin: 60px 10% 80px 10%;
+        padding: 0 30px 30px 30px;    
+        min-width: 350px;
+    }
+
+
+    table.info{
+        height: 80px;
+    }
+    
+    table.info td{
+        font-size: 14px;
+    }
+    
+    table.info th{
+        font-size: 16px;
+    }
+
+
+    div.colonne{
+        width: 45%;      
+    }
+    
+    
+    div.colonne1{
+        margin-left: 10%;
+    }
+    
+    
+    div.colonne2{
+        float: left;
+    }
+    
+    
+      
+}
+
+/* Ecran beaucoup plus grand */
+@media only screen and (min-width: 900px){
+    div.contenu{
+        margin-left: auto;
+        margin-right: auto;  
+        width: 645px;
+    }
 }
